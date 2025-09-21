@@ -128,7 +128,7 @@ DRG分组接口
 
 运行测试脚本：
 ```bash
-uv run python test_app.py
+uv run python tests/test_app.py
 ```
 
 预期输出：
@@ -169,11 +169,13 @@ drg-web-app/
 │   └── index.html        # 前端页面模板
 ├── drg_group/            # DRG分组器核心模块
 │   └── beijing_2022/     # 北京2022版分组器
-├── test_app.py           # 测试脚本
+├── tests/               # 测试目录
+│   └── test_app.py      # 测试脚本
 ├── start_web.sh          # Linux/Mac启动脚本
 ├── start_web.cmd         # Windows启动脚本
 ├── pyproject.toml        # 项目配置
-├── requirements.txt      # 依赖列表
+├── requirements.txt      # 依赖参考
+├── .gitignore           # Git忽略文件
 └── README.md            # 项目说明
 ```
 

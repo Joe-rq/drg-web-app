@@ -6,6 +6,11 @@ DRG Web应用测试脚本
 
 import sys
 import json
+import os
+
+# 添加父目录到Python路径，以便导入app模块
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from app import app
 
 def test_drg_grouping():
@@ -109,7 +114,7 @@ def main():
             print("🎉 所有测试通过！Web应用运行正常")
             print("\n📖 使用说明:")
             print("1. 运行 './start_web.sh' (Linux/Mac) 或 'start_web.cmd' (Windows)")
-            print("2. 在浏览器中访问 http://localhost:5000")
+            print("2. 在浏览器中访问 http://localhost:8080")
             print("3. 填写患者信息并进行DRG分组")
             return 0
         else:

@@ -1,15 +1,3 @@
 # DRG分组器Web应用依赖包
-# 注意：依赖以 pyproject.toml 为准；本文件仅作参考或导出用途
-# Web框架
+# 注意：依赖管理以 pyproject.toml 为准，本文件仅作参考
 Flask>=2.3.0
-
-# 数据处理
-pandas>=1.5.0
-openpyxl>=3.1.0
-
-# 开发和测试工具（可选）
-pytest>=7.0.0
-pytest-cov>=4.0.0
-black>=23.0.0
-flake8>=6.0.0
-mypy>=1.0.0
