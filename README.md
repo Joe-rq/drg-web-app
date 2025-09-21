@@ -252,9 +252,9 @@ drg-web-app/
 
 ## 📞 联系方式
 
-- 项目地址：https://github.com/你的用户名/drg-web-app
-- 问题反馈：https://github.com/你的用户名/drg-web-app/issues
-- 邮箱：your-email@example.com
+- 项目地址：`https://github.com/Joe-rq/drg-web-app`
+- 问题反馈：`https://github.com/Joe-rq/drg-web-app/issues`
+- 邮箱：`qrq-hit@foxmail.com`
 
 ---
 

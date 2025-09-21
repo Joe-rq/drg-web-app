@@ -21,8 +21,8 @@
 ```bash
 cd /Users/qrq/Documents/code/02-projects/drg-web-app
 
-# 添加远程仓库（替换为你的GitHub用户名）
-git remote add origin https://github.com/你的用户名/drg-web-app.git
+# 添加远程仓库（你的实际仓库地址）
+git remote add origin https://github.com/Joe-rq/drg-web-app.git
 
 # 推送代码到GitHub
 git branch -M main
