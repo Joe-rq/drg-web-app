@@ -1,5 +1,17 @@
 # 更新日志
 
+## [1.0.1] - 2025-09-21
+
+### 统一与文档整理（不涉及代码变更）
+- 许可证统一为 Apache-2.0（`pyproject.toml` 使用 `license={file="LICENSE"}`）
+- Python 版本声明统一为 3.9（更新 mypy 配置与文档口径）
+- Flask 版本说明统一至 2.3+（更新 README 徽章与技术栈）
+- Pytest 搜索路径调整为支持根目录与 `tests/`（`pyproject.toml`）
+- 移除无效的 console script 入口定义（避免安装后脚本报错）
+- README 新增“开发指南”，补充 uv + 格式化/静态检查/类型检查/测试命令
+- README 统一端口说明为 8080，并标注仅内置“北京2022版”
+- 维护规范：以 `pyproject.toml` 为依赖来源；`requirements.txt` 仅作参考
+
 ## [1.0.0] - 2024-12-19
 
 ### 🎉 首次发布

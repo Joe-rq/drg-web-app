@@ -6,7 +6,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-green.svg)](https://python.org)
-[![Flask](https://img.shields.io/badge/Flask-3.1.2-red.svg)](https://flask.palletsprojects.com)
+[![Flask](https://img.shields.io/badge/Flask-2.3%2B-red.svg)](https://flask.palletsprojects.com)
 
 ## ✨ 主要特性
 
@@ -19,7 +19,7 @@
 
 ## 🛠️ 技术栈
 
-- **后端**：Flask 3.1.2
+- **后端**：Flask 2.3+
 - **前端**：HTML5 + CSS3 + JavaScript + Bootstrap 5
 - **Python版本**：3.9+
 - **包管理**：uv工具
@@ -54,7 +54,9 @@ start_web.cmd
 
 ### 访问应用
 
-在浏览器中打开：**http://localhost:8080**
+在浏览器中打开：**http://localhost:8080**（默认端口 8080，可通过环境变量 `PORT` 覆盖）
+
+> 注：当前仓库内置分组器为“北京2022版”。README 中提及的其他地区/版本属于规划项，尚未在本仓库实现切换。
 
 ## 📱 界面预览
 
@@ -132,6 +134,30 @@ uv run python test_app.py
 预期输出：
 ```
 🎉 所有测试通过！Web应用运行正常
+```
+
+## 🧑‍💻 开发指南
+
+- 使用 uv 管理环境与依赖（以 `pyproject.toml` 为唯一依赖来源；`requirements.txt` 仅作参考或导出用途）：
+
+```bash
+# 创建并激活虚拟环境
+uv venv && source .venv/bin/activate
+
+# 同步依赖
+uv sync
+
+# 代码格式化
+uv run black .
+
+# 代码静态检查
+uv run flake8
+
+# 类型检查（示例）
+uv run mypy drg_group app.py
+
+# 运行测试（支持根目录与 tests/）
+uv run pytest -q
 ```
 
 ## 📁 项目结构

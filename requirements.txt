@@ -1,4 +1,5 @@
 # DRG分组器Web应用依赖包
+# 注意：依赖以 pyproject.toml 为准；本文件仅作参考或导出用途
 # Web框架
 Flask>=2.3.0
 

@@ -161,4 +161,27 @@ git push -u origin main
 
 ---
 
+## 🧑‍💻 本地开发与端口说明（uv）
+
+建议使用 uv 进行本地开发与依赖管理，依赖以 `pyproject.toml` 为准。
+
+```bash
+# 在项目根目录创建虚拟环境
+uv venv
+
+# 激活虚拟环境（macOS/Linux）
+source .venv/bin/activate
+
+# 安装/同步依赖
+uv sync
+
+# 启动应用（默认端口 8080）
+./start_web.sh
+
+# 如需修改端口
+export PORT=9000 && ./start_web.sh
+```
+
+> 访问地址：`http://localhost:8080`（或你指定的端口）
+
 **祝你的开源项目成功！** 🎉
